@@ -1,0 +1,126 @@
+
+.container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+.header-wrapper{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-link a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+.search{
+    font-size: larger;
+    cursor: pointer;
+}
+.search-wrapper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    
+}
+
+.search-wrapper input{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px;
+    outline: none;
+}
+.button {
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    background: linear-gradient(to right, rgb(231, 71, 132), 
+    rgb(0, 170, 255));
+    /* Gradient background */
+    border-radius: 10px;
+    border: none;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    /* Text shadow effect */
+    box-shadow: 0 0 10px rgba(55, 0, 255, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgb(231, 71, 132);
+    color: white;
+  }
+  
+
+/* card css properties  */
+
+
+.card-wrapper{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 280px);  
+    /* grid-template-columns: auto auto auto auto; */
+   
+  
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .card-wrapper{
+
+        grid-template-columns: repeat(3, 1fr);  
+      
+      
+    }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+ 
+ }
+
+/* .card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding: 10px;
+}*/
+.card a{
+    text-decoration: none;
+    color: black;
+} 
+
+.card {
+
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   }
+   
+   .shadow {
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(190, 190, 190),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+   }
+   
